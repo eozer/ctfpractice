@@ -1,0 +1,16 @@
+{
+  "name": "hackthebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "emdee.js",
+  "scripts": {
+    "start": "node emdee.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-md5": "^1.0.3",
+    "md5": "^2.3.0",
+    "spark-md5": "^3.0.1"
+  }
+}
