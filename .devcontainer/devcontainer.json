@@ -1,0 +1,22 @@
+{
+    "name": "ctf",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+        // Below is added for forwarding display to host. Run "xhost +local" at host as well.
+        "--net", "host",
+        "-e", "DISPLAY=${env:DISPLAY}",
+        "-v", "/tmp/.X11-unix:/tmp/.X11-unix"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+		"ms-python.python"
+	],
+    "forwardPorts": [],
+    "remoteUser": "vscode",
+    "postStartCommand": "echo 'Container is started, will execute postStartCommand'",
+    "postCreateCommand": "echo 'Container is created, will execute postCreateCommand'"
+}
