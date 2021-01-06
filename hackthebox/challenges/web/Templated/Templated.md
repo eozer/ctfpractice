@@ -7,6 +7,7 @@ In this web challenge, we are given a website and expected to find the flag by e
 - The website lets user to provide a Jinja template from parameters. With this vulnerability (Server side template injection, or SSTI), we can acquire the flag [1].
 - To get the flag, you need to know about `Python's Method Resolution Order (MRO)`.
 
+#### Keywords: `SSTI`, `Jinja`, `mro`
 
 # How to get the flag?
 When the challenge instance is launched, I got a website that says it is under construction. We can see that it is powered by `Flask/Jinja2`. Perhaps it is running python?
